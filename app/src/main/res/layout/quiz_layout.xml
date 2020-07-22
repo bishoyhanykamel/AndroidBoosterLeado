@@ -6,7 +6,7 @@
     android:background="@drawable/quiz_background">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineStart"
+        android:id="@+id/guidelineStartUpper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -49,30 +49,30 @@
 
     <ImageButton
         android:id="@+id/close_imageBtn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:src="@drawable/close"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        android:src="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="@id/guidelineStartUpper"
         app:layout_constraintTop_toTopOf="@id/guidelineTop" />
 
 
     <ImageButton
         android:id="@+id/shape_imageBtn"
-        android:layout_width="43dp"
-        android:layout_height="83dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:src="@drawable/shape"
+        android:src="@drawable/ic_shape"
         app:layout_constraintStart_toEndOf="@id/close_imageBtn"
         app:layout_constraintTop_toTopOf="@id/guidelineTop" />
 
 
     <TextView
         android:id="@+id/supportSystem_txtView"
-        style="@style/quiz_regular"
+        style="@style/quiz_regular_titles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -89,7 +89,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Lesson 1 quiz"
-        app:layout_constraintEnd_toStartOf="@id/supportSystem_txtView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/shape_imageBtn" />
 
@@ -104,14 +103,14 @@
 
     <TextView
         android:id="@+id/quizQuestion_textView"
-        style="@style/quiz_regular"
+        style="@style/quiz_regular_titles"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Course related question goes in here?"
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
-        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintStart_toEndOf="@id/guidelineStartUpper"
         app:layout_constraintTop_toBottomOf="@id/subtitle_textView" />
 
     <TextView
@@ -125,7 +124,7 @@
         android:elevation="8dp"
         app:layout_constraintBottom_toTopOf="@id/quizAnswerThree_textView"
         app:layout_constraintEnd_toEndOf="@id/guidelineMiddle"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintStart_toStartOf="@id/guidelineStartUpper"
         app:layout_constraintTop_toBottomOf="@id/quizQuestion_textView" />
 
     <TextView
@@ -148,7 +147,7 @@
         android:elevation="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineQuizEnd"
         app:layout_constraintEnd_toEndOf="@id/guidelineMiddle"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintStart_toStartOf="@id/guidelineStartUpper"
         app:layout_constraintTop_toBottomOf="@id/quizAnswerOne_textView" />
 
     <TextView
@@ -222,7 +221,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintStart_toStartOf="@id/guidelineStartUpper"
         app:layout_constraintTop_toBottomOf="@id/guidelineQuizEnd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
