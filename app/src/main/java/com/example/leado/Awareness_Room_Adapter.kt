@@ -9,12 +9,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.self_awareness_item.view.*
 
-class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) :
-    RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
+class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
 
 
-    inner class SelfAwarnessItemViewHolder(SelfAwarnessItemView: View) :
-        RecyclerView.ViewHolder(SelfAwarnessItemView) {
+    inner class SelfAwarnessItemViewHolder(SelfAwarnessItemView: View) : RecyclerView.ViewHolder(SelfAwarnessItemView) {
         val itemtitle: TextView = SelfAwarnessItemView.TitleText
         val lesson: TextView = SelfAwarnessItemView.Lesson
         val lessonText: TextView = SelfAwarnessItemView.lessonText
@@ -23,8 +21,7 @@ class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SelfAwarnessItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return SelfAwarnessItemViewHolder(
-            layoutInflater.inflate(R.layout.self_awareness_item, parent, false))
+        return SelfAwarnessItemViewHolder(layoutInflater.inflate(R.layout.self_awareness_item, parent, false))
     }
 
     override fun onBindViewHolder(holder: SelfAwarnessItemViewHolder, position: Int) {
