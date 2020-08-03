@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2fcfa">
+
+
+    <TextView
+        android:id="@+id/AwarnessRoom"
+        android:layout_width="182.49dp"
+        android:layout_height="26.4dp"
+        android:layout_marginTop="24.1dp"
+        android:text="Awareness Room"
+        android:textAlignment="center"
+        android:textColor="#1f314a"
+        android:textSize="22.11sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/rubik_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="26.39dp"
+        android:layout_height="6.6dp"
+        android:layout_marginTop="3.3dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toStartOf="@+id/second"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="26.39dp"
+        android:layout_height="6.6dp"
+        android:layout_marginStart="11.22dp"
+        android:layout_marginTop="3.3dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintEnd_toStartOf="@+id/third"
+        app:layout_constraintStart_toEndOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+
+
+    <ImageView
+        android:id="@+id/third"
+        android:layout_width="26.39dp"
+        android:layout_height="6.6dp"
+        android:layout_marginStart="11.22dp"
+        android:layout_marginTop="3.3dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintEnd_toStartOf="@id/fourth"
+        app:layout_constraintStart_toEndOf="@+id/second"
+        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+
+    <ImageView
+        android:id="@+id/fourth"
+        android:layout_width="26.39dp"
+        android:layout_height="6.6dp"
+        android:layout_marginStart="11.22dp"
+        android:layout_marginTop="3.3dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintEnd_toStartOf="@id/fifth"
+        app:layout_constraintStart_toEndOf="@id/third"
+        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+
+    <ImageView
+        android:id="@+id/fifth"
+        android:layout_width="26.39dp"
+        android:layout_height="6.6dp"
+        android:layout_marginStart="11.22dp"
+        android:layout_marginTop="3.3dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fourth"
+        app:layout_constraintTop_toBottomOf="@id/AwarnessRoom" />
+
+    <ImageView
+        android:id="@+id/book_shelf"
+        android:layout_width="30dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24.09dp"
+        android:background="@drawable/book_shelf"
+        app:layout_constraintEnd_toStartOf="@+id/info1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second" />
+
+    <ImageView
+        android:id="@+id/info1"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24.09dp"
+        android:background="@drawable/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book_shelf"
+        app:layout_constraintTop_toBottomOf="@+id/fourth" />
+
+
+    <TextView
+        android:id="@+id/supportSystem"
+        android:layout_width="122.39dp"
+        android:layout_height="23.39dp"
+        android:layout_marginTop="14.19dp"
+        android:background="@drawable/rectangle_3"
+        android:elevation="6dp"
+        android:text="Support System"
+        android:textAlignment="center"
+        android:textColor="#1f314a"
+        android:textSize="13.56sp"
+        app:layout_constraintEnd_toEndOf="@+id/book_shelf"
+        app:layout_constraintStart_toStartOf="@+id/book_shelf"
+        app:layout_constraintTop_toBottomOf="@+id/book_shelf" />
+
+    <TextView
+        android:id="@+id/coreValue"
+        android:layout_width="122.39dp"
+        android:layout_height="23.39dp"
+        android:layout_marginTop="14.19dp"
+        android:background="@drawable/rectangle_4"
+        android:text="Core Values"
+        android:elevation="7dp"
+        android:textAlignment="center"
+        android:textColor="#601f314a"
+        android:textSize="13.5sp"
+        app:layout_constraintEnd_toEndOf="@+id/info1"
+        app:layout_constraintStart_toStartOf="@+id/info1"
+        app:layout_constraintTop_toBottomOf="@+id/info1" />
+
+    <TextView
+        android:id="@+id/Strenth_Weakness"
+        android:layout_width="126.39dp"
+        android:layout_height="23.39dp"
+        android:layout_marginTop="14.19dp"
+        android:background="@drawable/rectangle_4"
+        android:outlineSpotShadowColor="#000000"
+        android:text="Strenth-Weakness"
+        android:textAlignment="center"
+        android:textColor="#501f314a"
+        android:textSize="13.5sp"
+        android:elevation="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/info2"
+        app:layout_constraintStart_toStartOf="@+id/info2"
+        app:layout_constraintTop_toBottomOf="@+id/info2" />
+
+    <ImageView
+        android:id="@+id/info2"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5.61dp"
+        android:background="@drawable/info"
+        app:layout_constraintEnd_toStartOf="@+id/info3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supportSystem" />
+
+    <ImageView
+        android:id="@+id/info3"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5.61dp"
+        android:background="@drawable/info"
+        app:layout_constraintEnd_toEndOf="@+id/coreValue"
+        app:layout_constraintStart_toStartOf="@+id/coreValue"
+        app:layout_constraintTop_toBottomOf="@+id/coreValue" />
+
+    <TextView
+        android:id="@+id/GoalsAspiration"
+        android:layout_width="122.39dp"
+        android:layout_height="23.39dp"
+        android:layout_marginTop="14.19dp"
+        android:background="@drawable/rectangle_4"
+        android:text="Goals &amp; Aspiration"
+        android:textAlignment="center"
+        android:elevation="7dp"
+        android:textColor="#501f314a"
+        android:textSize="13.5sp"
+        app:layout_constraintEnd_toEndOf="@+id/info3"
+        app:layout_constraintStart_toStartOf="@+id/info3"
+        app:layout_constraintTop_toBottomOf="@+id/info3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_outer"
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        app:cardBackgroundColor="#d2fcfa"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Strenth_Weakness">
+
+        <androidx.cardview.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_inner"
+            android:layout_width="match_parent"
+            android:layout_height="357dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="356.4dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6.6dp"
+                android:text="Self-awareness"
+                android:textAlignment="center"
+                android:textColor="#1f314a"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="418dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
