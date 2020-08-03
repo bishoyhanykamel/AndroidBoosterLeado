@@ -91,15 +91,51 @@
             app:layout_constraintStart_toStartOf="@id/progressImage_imageView"
             app:layout_constraintTop_toBottomOf="@id/progressImage_imageView" />
 
-        <include
-            android:id="@+id/lessonProgress_parent"
-            layout="@layout/custom_ratingbar_layout_refrence"
+        <LinearLayout
+            android:id="@+id/lesson1_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="@+id/lessonName_textView"
-            app:layout_constraintStart_toStartOf="@id/lessonName_textView"
-            app:layout_constraintTop_toBottomOf="@id/lessonName_textView" />
+            app:layout_constraintStart_toStartOf="@+id/lessonName_textView"
+            app:layout_constraintTop_toBottomOf="@+id/lessonName_textView">
+
+            <TextView
+                android:id="@+id/progressOne_textView"
+                android:layout_width="32dp"
+                android:layout_height="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/custom_ratebar_item_filled" />
+
+            <TextView
+                android:id="@+id/progressTwo_textView"
+                android:layout_width="32dp"
+                android:layout_height="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/custom_ratebar_item_filled" />
+
+            <TextView
+                android:id="@+id/progressThree_textView"
+                android:layout_width="32dp"
+                android:layout_height="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/custom_ratebar_item_filled" />
+
+            <TextView
+                android:id="@+id/progressFour_textView"
+                android:layout_width="32dp"
+                android:layout_height="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/custom_ratebar_item_filled" />
+
+            <TextView
+                android:id="@+id/progressFive_textView"
+                android:layout_width="32dp"
+                android:layout_height="8dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/custom_ratebar_item_filled" />
+
+        </LinearLayout>
 
         <!-- TODO embed youtube video instead of image-->
         <ImageView
