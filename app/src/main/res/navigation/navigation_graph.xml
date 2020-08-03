@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/lesson1">
+
+    <fragment
+        android:id="@+id/lesson1"
+        android:name="com.example.leado.Lesson1"
+        android:label="fragment_lesson1"
+        tools:layout="@layout/fragment_lesson1" >
+        <action
+            android:id="@+id/action_lesson1_to_lesson2"
+            app:destination="@id/lesson2" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson2"
+        android:name="com.example.leado.Lesson2"
+        android:label="fragment_lesson2"
+        tools:layout="@layout/fragment_lesson2" >
+        <action
+            android:id="@+id/action_lesson2_to_lesson3"
+            app:destination="@id/lesson3" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson3"
+        android:name="com.example.leado.Lesson3"
+        android:label="fragment_lesson3"
+        tools:layout="@layout/fragment_lesson3" >
+        <action
+            android:id="@+id/action_lesson3_to_lesson4"
+            app:destination="@id/lesson4" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson4"
+        android:name="com.example.leado.Lesson4"
+        android:label="fragment_lesson4"
+        tools:layout="@layout/fragment_lesson4" >
+        <action
+            android:id="@+id/action_lesson4_to_refrence"
+            app:destination="@id/refrence" />
+    </fragment>
+    <fragment
+        android:id="@+id/refrence"
+        android:name="com.example.leado.Refrence"
+        android:label="fragment_refrence"
+        tools:layout="@layout/fragment_refrence" />
+</navigation>
