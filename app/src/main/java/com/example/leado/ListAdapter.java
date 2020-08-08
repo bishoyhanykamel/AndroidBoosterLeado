@@ -1,4 +1,4 @@
-package com.example.leado.adapter;
+package com.example.leado;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,16 +9,18 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.anhttvn.customrecyclerview.R;
+import com.example.leado.R;
 import com.example.leado.model.ItemAdapter;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<ItemAdapter> mList;
     private Context mContext;
-    public ListAdapter(List<ItemAdapter> list, Context context){
+    public ListAdapter(ArrayList<ItemAdapter> list, Context context){
         super();
         mList = list;
         mContext = context;

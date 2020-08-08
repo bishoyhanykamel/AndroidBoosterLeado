@@ -12,11 +12,11 @@
         android:title="Search" />
 
     <item
-        android:id="@+id/navigation_achievements"
+        android:id="@+id/achievements_"
         android:icon="@drawable/ic_action_achievements"
         android:title="Achievements" />
     <item
-        android:id="@+id/navigation_account"
+        android:id="@+id/profileFragment_"
         android:icon="@drawable/ic_action_account"
-        android:title="Account" />
+        android:title="Profile" />
 </menu>
