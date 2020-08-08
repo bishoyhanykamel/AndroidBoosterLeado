@@ -1,4 +1,4 @@
-package com.example.leado.ui.home
+package com.example.leado.viewModels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

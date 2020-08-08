@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Fragment2">
+        <activity android:name=".Fragment2"/>
+        <activity android:name=".CongratsScreen"/>
+        <activity android:name=".VideoActivity"/>
+        <activity android:name=".AwarenessRoom"/>
+        <activity android:name=".Welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

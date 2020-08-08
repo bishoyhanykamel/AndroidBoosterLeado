@@ -1,5 +1,8 @@
 package com.example.leado
 
+import android.app.Application
+import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -16,7 +19,7 @@ class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) : RecyclerV
         val itemtitle: TextView = SelfAwarnessItemView.TitleText
         val lesson: TextView = SelfAwarnessItemView.Lesson
         val lessonText: TextView = SelfAwarnessItemView.lessonText
-        val itembutton: Button = SelfAwarnessItemView.ItemButton
+        val itembutton: Button = SelfAwarnessItemView.startButton
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SelfAwarnessItemViewHolder {
@@ -30,9 +33,15 @@ class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) : RecyclerV
         holder.lesson.text = SelfAwarnessItemClass.lesson
         holder.lessonText.text = SelfAwarnessItemClass.lessonText
         holder.itembutton.text=SelfAwarnessItemClass.buttonText
-        holder.itembutton.setBackgroundResource(R.drawable.start_button)
-        if(position>0)
         holder.itembutton.setBackgroundResource(R.drawable.lock_button)
+        if(position==0){
+        holder.itembutton.setBackgroundResource(R.drawable.start_button)
+        val context: Context = holder.itemView.context
+        holder.itembutton.setOnClickListener {
+            val intent:Intent = Intent(context,VideoActivity::class.java)
+            context.startActivity(intent)}
+        }
+
     }
 
     override fun getItemCount(): Int {

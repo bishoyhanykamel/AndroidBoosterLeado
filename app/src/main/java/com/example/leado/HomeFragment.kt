@@ -1,15 +1,14 @@
-package com.example.leado.ui.home
+package com.example.leado
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.fragment.findNavController
 import com.example.leado.R
+import com.example.leado.viewModels.HomeViewModel
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -28,9 +27,11 @@ class HomeFragment : Fragment() {
     //    })
     //    return root
   //  }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+          selfAwarenessBtn.setOnClickListener {
+              val intent = Intent (getActivity(), AwarenessRoom::class.java)
+              getActivity()?.startActivity(intent)          }
        // findNavController().navigate(HomeFragmentDirections.actionNavigationHomeToAchievements())
     }
 }

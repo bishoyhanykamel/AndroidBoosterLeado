@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.viewModels
 
 import androidx.lifecycle.ViewModel
 import com.example.leado.model.ItemAdapter

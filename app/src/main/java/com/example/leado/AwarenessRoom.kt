@@ -1,5 +1,6 @@
 package com.example.leado
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,8 @@ class AwarenessRoom : AppCompatActivity() {
         setContentView(R.layout.activity_awareness_room)
 
         main_recyclerview.adapter = AwarnessRoomAdapter(getfakedata())
+
+
     }
 
     fun getfakedata(): ArrayList<SelfAwarnessItemClass> {

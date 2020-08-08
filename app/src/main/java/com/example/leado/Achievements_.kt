@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
+import com.example.leado.viewModels.AchievementsViewModel
 import kotlinx.android.synthetic.main.fragment_achievements_.*
 
 class Achievements_ : Fragment() {
@@ -21,31 +22,14 @@ class Achievements_ : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_achievements_, container, false)
-        achievementsRecycler.adapter =
-            ListAdapter(achievementsViewModel.getAchievementsDataList(), activity)
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-      //  findNavController().navigate(Achievements_Directions.actionAchievementsToProfileFragment())
+        achievementsRecycler.adapter = ListAdapter(achievementsViewModel.getAchievementsDataList(), activity)
+
 
     }
 
-
-    //  override fun onActivityCreated(savedInstanceState: Bundle?) {
-    //    super.onActivityCreated(savedInstanceState)
-    // init();
-    //   addList()
-    //  adapter()
 }
-
-
-//  private void init() {
-//    mRecycleview = achievementslistview.findViewById(R.id.achievementsListView); }
-//  private fun adapter() {
-// Log.d("anhtt", "mlist : " + mList.size())
-// mAdapter = ListAdapter(mList, activity)
-//  mRecycleview!!.adapter = mAdapter
-//  mRecycleview.layoutManager = LinearLayoutManager(activity)
-//  mAdapter!!.notifyDataSetChanged()
-//} }
