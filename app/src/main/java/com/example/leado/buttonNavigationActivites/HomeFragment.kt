@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.buttonNavigationActivites
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.leado.AwarenessRoom
+import com.example.leado.R
 import com.example.leado.viewModels.HomeViewModel
-import kotlinx.android.synthetic.main.activity_awareness_room.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {

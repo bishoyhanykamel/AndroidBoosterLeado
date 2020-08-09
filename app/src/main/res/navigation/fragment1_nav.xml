@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcome_"
-        android:name="com.example.leado.Welcome_"
+        android:name="com.example.leado.startActivities.Welcome_"
         android:label="fragment_welcome_"
         tools:layout="@layout/fragment_welcome_" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/login_"
-        android:name="com.example.leado.Login_"
+        android:name="com.example.leado.startActivities.Login_"
         android:label="fragment_login_"
         tools:layout="@layout/fragment_login_" />
     <fragment
         android:id="@+id/before_home_"
-        android:name="com.example.leado.Before_home_"
+        android:name="com.example.leado.startActivities.Before_home_"
         android:label="fragment_before_home_"
         tools:layout="@layout/fragment_before_home_" >
         <action

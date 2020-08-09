@@ -1,15 +1,14 @@
 package com.example.leado
 
-import android.app.Application
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.leado.couseActivities.VideoActivity
 import kotlinx.android.synthetic.main.self_awareness_item.view.*
 
 class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
@@ -38,7 +37,8 @@ class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Ad
         holder.itembutton.setBackgroundResource(R.drawable.start_button)
         val context: Context = holder.itemView.context
         holder.itembutton.setOnClickListener {
-            val intent:Intent = Intent(context,VideoActivity::class.java)
+            val intent:Intent = Intent(context,
+                VideoActivity::class.java)
             context.startActivity(intent)}
         }
 

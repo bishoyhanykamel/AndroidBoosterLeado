@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/lesson1"
-        android:name="com.example.leado.Lesson1"
+        android:name="com.example.leado.couseActivities.Lesson1"
         android:label="fragment_lesson1"
         tools:layout="@layout/fragment_lesson1" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/lesson2"
-        android:name="com.example.leado.Lesson2"
+        android:name="com.example.leado.couseActivities.Lesson2"
         android:label="fragment_lesson2"
         tools:layout="@layout/fragment_lesson2" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/lesson3"
-        android:name="com.example.leado.Lesson3"
+        android:name="com.example.leado.couseActivities.Lesson3"
         android:label="fragment_lesson3"
         tools:layout="@layout/fragment_lesson3" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/lesson4"
-        android:name="com.example.leado.Lesson4"
+        android:name="com.example.leado.couseActivities.Lesson4"
         android:label="fragment_lesson4"
         tools:layout="@layout/fragment_lesson4" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/refrence"
-        android:name="com.example.leado.Refrence"
+        android:name="com.example.leado.couseActivities.Refrence"
         android:label="fragment_refrence"
         tools:layout="@layout/fragment_refrence" />
 </navigation>

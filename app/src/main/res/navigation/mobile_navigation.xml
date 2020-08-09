@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.leado.HomeFragment"
+        android:name="com.example.leado.buttonNavigationActivites.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/achievements_"
-        android:name="com.example.leado.Achievements_"
+        android:name="com.example.leado.buttonNavigationActivites.Achievements_"
         android:label="fragment_achievements_"
         tools:layout="@layout/fragment_achievements_" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment_"
-        android:name="com.example.leado.ProfileFragment_"
+        android:name="com.example.leado.buttonNavigationActivites.ProfileFragment_"
         android:label="fragment_profile_"
         tools:layout="@layout/fragment_profile_" >
         <action

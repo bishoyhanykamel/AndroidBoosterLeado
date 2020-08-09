@@ -1,12 +1,11 @@
 package com.example.leado
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.leado.couseActivities.VideoActivity
 import com.example.leado.viewModels.LessonsDataViewModel
 import kotlinx.android.synthetic.main.activity_awareness_room.*
-import kotlinx.android.synthetic.main.self_awareness_item.*
 
 class AwarenessRoom : AppCompatActivity() {
 
@@ -24,7 +23,8 @@ class AwarenessRoom : AppCompatActivity() {
         LessonNameRecycler.text=getIntent().getStringExtra("lessonNameRecycler")
 
         lesson1btn.setOnClickListener {
-            val intent=Intent(this,VideoActivity::class.java)
+            val intent=Intent(this,
+                VideoActivity::class.java)
             startActivity(intent)
         }
 

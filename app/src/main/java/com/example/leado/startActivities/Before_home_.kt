@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.startActivities
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.leado.startActivities.Before_home_Directions
+import com.example.leado.R
 import kotlinx.android.synthetic.main.fragment_before_home_.*
 
 

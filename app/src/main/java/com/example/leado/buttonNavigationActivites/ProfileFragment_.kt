@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.buttonNavigationActivites
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.leado.buttonNavigationActivites.ProfileFragment_Directions
+import com.example.leado.R
+import com.example.leado.skillAdapter
 import com.example.leado.viewModels.ProfileViewModel
 import kotlinx.android.synthetic.main.fragment_profile_.*
 
@@ -25,7 +28,8 @@ class ProfileFragment_ : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        profileRecycler.adapter = skillAdapter(profileViewModel.getprofileData())
+        profileRecycler.adapter =
+            skillAdapter(profileViewModel.getprofileData())
         profilebackbtn.setOnClickListener {
             findNavController().navigate(ProfileFragment_Directions.actionProfileFragmentToAchievements())
         }

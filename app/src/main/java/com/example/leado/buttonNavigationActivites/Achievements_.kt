@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.buttonNavigationActivites
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.leado.buttonNavigationActivites.Achievements_Directions
+import com.example.leado.ListAdapter
+import com.example.leado.R
 import com.example.leado.viewModels.AchievementsViewModel
 import kotlinx.android.synthetic.main.fragment_achievements_.*
 
@@ -29,7 +32,10 @@ class Achievements_ : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         achievementsRecycler.adapter =
-            ListAdapter(achievementsViewModel.getAchievementsDataList(), activity)
+            ListAdapter(
+                achievementsViewModel.getAchievementsDataList(),
+                activity
+            )
         achievementsbackbtn.setOnClickListener {
             findNavController().navigate(Achievements_Directions.actionAchievementsToNavigationHome())
         }
