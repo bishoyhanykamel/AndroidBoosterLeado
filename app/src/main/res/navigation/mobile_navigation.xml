@@ -23,10 +23,17 @@
         <action
             android:id="@+id/action_achievements__to_profileFragment_"
             app:destination="@id/profileFragment_" />
+        <action
+            android:id="@+id/action_achievements__to_navigation_home"
+            app:destination="@id/navigation_home" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment_"
         android:name="com.example.leado.ProfileFragment_"
         android:label="fragment_profile_"
-        tools:layout="@layout/fragment_profile_" />
+        tools:layout="@layout/fragment_profile_" >
+        <action
+            android:id="@+id/action_profileFragment__to_achievements_"
+            app:destination="@id/achievements_" />
+    </fragment>
 </navigation>

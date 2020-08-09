@@ -23,6 +23,11 @@ class AwarenessRoom : AppCompatActivity() {
         LessonName.text = getIntent().getStringExtra("lessonName")
         LessonNameRecycler.text=getIntent().getStringExtra("lessonNameRecycler")
 
+        lesson1btn.setOnClickListener {
+            val intent=Intent(this,VideoActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

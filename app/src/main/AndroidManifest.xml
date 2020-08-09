@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Fragment2"/>
-        <activity android:name=".CongratsScreen"/>
-        <activity android:name=".VideoActivity"/>
-        <activity android:name=".AwarenessRoom"/>
-        <activity android:name=".Welcome">
+        <activity android:name=".Fragment2"></activity>
+        <activity android:name=".MainActivityJ" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AwarenessRoom" />
+        <activity android:name=".CongratsScreen" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".Fragment1_">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

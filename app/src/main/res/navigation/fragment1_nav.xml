@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment1_nav"
+    app:startDestination="@id/welcome_">
+
+    <fragment
+        android:id="@+id/welcome_"
+        android:name="com.example.leado.Welcome_"
+        android:label="fragment_welcome_"
+        tools:layout="@layout/fragment_welcome_" >
+        <action
+            android:id="@+id/action_welcome__to_before_home_"
+            app:destination="@id/before_home_" />
+        <action
+            android:id="@+id/action_welcome__to_login_"
+            app:destination="@id/login_" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_"
+        android:name="com.example.leado.Login_"
+        android:label="fragment_login_"
+        tools:layout="@layout/fragment_login_" />
+    <fragment
+        android:id="@+id/before_home_"
+        android:name="com.example.leado.Before_home_"
+        android:label="fragment_before_home_"
+        tools:layout="@layout/fragment_before_home_" >
+        <action
+            android:id="@+id/action_before_home__to_login_"
+            app:destination="@id/login_" />
+    </fragment>
+</navigation>
