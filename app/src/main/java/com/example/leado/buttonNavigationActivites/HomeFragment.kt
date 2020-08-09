@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.leado.AwarenessRoom
+import com.example.leado.LessonItemClass
 import com.example.leado.R
 import com.example.leado.viewModels.HomeViewModel
+import com.example.leado.viewModels.LessonsDataViewModel
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -31,29 +33,30 @@ class HomeFragment : Fragment() {
     //  }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
+        val lessonsDataViewModel = LessonsDataViewModel()
 
         selfAwarenessBtn.setOnClickListener {
             val intent = Intent(getActivity(), AwarenessRoom::class.java)
-            intent.putExtra("lessonName","Awareness Room")
-            intent.putExtra("lessonNameRecycler","Self-Awareness")
+            intent.putExtra("lessonName", "Awareness Room")
+            intent.putExtra("lessonNameRecycler", "Self-Awareness")
             getActivity()?.startActivity(intent)
 
         }
         mindMappingBtn.setOnClickListener {
             val intent = Intent(getActivity(), AwarenessRoom::class.java)
-            intent.putExtra("lessonName","mind mapping")
-            intent.putExtra("lessonNameRecycler","mind mapping")
+            intent.putExtra("lessonName", "mind mapping")
+            intent.putExtra("lessonNameRecycler", "mind mapping")
             getActivity()?.startActivity(intent)
-         //   intent.putExtra("lessonName",)
+            //   intent.putExtra("lessonName",)
         }
         personal_BrandingBtn.setOnClickListener {
             val intent = Intent(getActivity(), AwarenessRoom::class.java)
-            intent.putExtra("lessonName","personal-Branding")
-            intent.putExtra("lessonNameRecycler","personal-Branding")
+            intent.putExtra("lessonName", "personal-Branding")
+            intent.putExtra("lessonNameRecycler", "personal-Branding")
             getActivity()?.startActivity(intent)
-         //   intent.putExtra("lessonName",)
+            //   intent.putExtra("lessonName",)
         }
 
     }
+
 }

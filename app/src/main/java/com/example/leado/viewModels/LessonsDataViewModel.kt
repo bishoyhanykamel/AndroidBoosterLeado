@@ -4,7 +4,14 @@ import com.example.leado.LessonItemClass
 import com.example.leado.repositories.LessonsDataRepo
 
 class LessonsDataViewModel {
-    fun getLessonsData():ArrayList<LessonItemClass>{
-        return LessonsDataRepo.getfakedata()
+    fun getLessonsDataAwareness(): ArrayList<LessonItemClass> {
+        return LessonsDataRepo.getfakedataAwareness()
+    }
+
+    fun getLessonsDataMind(): ArrayList<LessonItemClass> {
+        return LessonsDataRepo.getfakedataMind()
+    }
+    fun getLessonsDataBranding(): ArrayList<LessonItemClass> {
+        return LessonsDataRepo.getfakedataBranding()
     }
 }
