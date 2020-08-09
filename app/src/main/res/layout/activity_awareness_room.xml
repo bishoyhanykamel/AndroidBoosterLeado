@@ -7,8 +7,8 @@
 
 
     <TextView
-        android:id="@+id/AwarnessRoom"
-        android:layout_width="182.49dp"
+        android:id="@+id/LessonName"
+        android:layout_width="wrap_content"
         android:layout_height="26.4dp"
         android:layout_marginTop="24.1dp"
         android:text="Awareness Room"
@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+        app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
     <ImageView
         android:id="@+id/second"
@@ -42,7 +42,7 @@
         android:background="@drawable/rectangle_copy"
         app:layout_constraintEnd_toStartOf="@+id/third"
         app:layout_constraintStart_toEndOf="@id/first"
-        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+        app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
 
     <ImageView
@@ -54,7 +54,7 @@
         android:background="@drawable/rectangle_copy"
         app:layout_constraintEnd_toStartOf="@id/fourth"
         app:layout_constraintStart_toEndOf="@+id/second"
-        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+        app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
     <ImageView
         android:id="@+id/fourth"
@@ -65,7 +65,7 @@
         android:background="@drawable/rectangle_copy"
         app:layout_constraintEnd_toStartOf="@id/fifth"
         app:layout_constraintStart_toEndOf="@id/third"
-        app:layout_constraintTop_toBottomOf="@+id/AwarnessRoom" />
+        app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
     <ImageView
         android:id="@+id/fifth"
@@ -76,7 +76,7 @@
         android:background="@drawable/rectangle_copy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fourth"
-        app:layout_constraintTop_toBottomOf="@id/AwarnessRoom" />
+        app:layout_constraintTop_toBottomOf="@id/LessonName" />
 
     <ImageView
         android:id="@+id/book_shelf"
@@ -204,6 +204,7 @@
             app:cardCornerRadius="10dp">
 
             <TextView
+                android:id="@+id/LessonNameRecycler"
                 android:layout_width="356.4dp"
                 android:layout_height="31dp"
                 android:layout_gravity="center_horizontal"

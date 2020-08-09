@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.leado.viewModels.AchievementsViewModel
 import kotlinx.android.synthetic.main.fragment_achievements_.*
@@ -28,7 +29,9 @@ class Achievements_ : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         achievementsRecycler.adapter = ListAdapter(achievementsViewModel.getAchievementsDataList(), activity)
-
+achievementsbackbtn.setOnClickListener{
+  //  findNavController()
+}
 
     }
 

@@ -17,6 +17,7 @@
 
 
     <Button
+        android:id="@+id/personal_BrandingBtn"
         android:layout_width="178dp"
         android:layout_height="54dp"
         android:background="@drawable/rounded_corners"
@@ -30,6 +31,7 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <Button
+        android:id="@+id/mindMappingBtn"
         android:layout_width="169dp"
         android:layout_height="58dp"
         android:background="@drawable/rounded_corners"

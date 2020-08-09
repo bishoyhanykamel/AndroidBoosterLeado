@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.self_awareness_item.view.*
 
-class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
+class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
 
 
     inner class SelfAwarnessItemViewHolder(SelfAwarnessItemView: View) : RecyclerView.ViewHolder(SelfAwarnessItemView) {
@@ -28,11 +28,11 @@ class AwarnessRoomAdapter(val itemlist: List<SelfAwarnessItemClass>) : RecyclerV
     }
 
     override fun onBindViewHolder(holder: SelfAwarnessItemViewHolder, position: Int) {
-        val SelfAwarnessItemClass: SelfAwarnessItemClass = itemlist.get(position)
-        holder.itemtitle.text = SelfAwarnessItemClass.litle
-        holder.lesson.text = SelfAwarnessItemClass.lesson
-        holder.lessonText.text = SelfAwarnessItemClass.lessonText
-        holder.itembutton.text=SelfAwarnessItemClass.buttonText
+        val lessonItemClass: LessonItemClass = itemlist.get(position)
+        holder.itemtitle.text = lessonItemClass.litle
+        holder.lesson.text = lessonItemClass.lesson
+        holder.lessonText.text = lessonItemClass.lessonText
+        holder.itembutton.text=lessonItemClass.buttonText
         holder.itembutton.setBackgroundResource(R.drawable.lock_button)
         if(position==0){
         holder.itembutton.setBackgroundResource(R.drawable.start_button)
