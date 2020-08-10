@@ -175,6 +175,19 @@
             app:layout_constraintBottom_toTopOf="@+id/guidelineStartVideo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lessonProgress_parent" />
+
+        <Button
+            android:id="@+id/takeQuiz1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:text="take Quiz 1"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineStartVideo"
+            app:layout_constraintEnd_toStartOf="@+id/next_btn2"
+            />
+
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"

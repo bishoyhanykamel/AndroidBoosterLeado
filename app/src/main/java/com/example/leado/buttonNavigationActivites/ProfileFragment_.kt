@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.leado.buttonNavigationActivites.ProfileFragment_Directions
 import com.example.leado.R
-import com.example.leado.skillAdapter
+import com.example.leado.adapter.skillAdapter
 import com.example.leado.viewModels.ProfileViewModel
 import kotlinx.android.synthetic.main.fragment_profile_.*
 

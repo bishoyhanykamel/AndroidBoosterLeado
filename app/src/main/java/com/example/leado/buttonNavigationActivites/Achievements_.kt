@@ -8,8 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.leado.buttonNavigationActivites.Achievements_Directions
-import com.example.leado.ListAdapter
+import com.example.leado.adapter.ListAdapter
 import com.example.leado.R
 import com.example.leado.viewModels.AchievementsViewModel
 import kotlinx.android.synthetic.main.fragment_achievements_.*

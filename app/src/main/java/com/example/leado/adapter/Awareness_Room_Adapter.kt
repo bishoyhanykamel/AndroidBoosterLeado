@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.leado.R
 import com.example.leado.couseActivities.VideoActivity
+import com.example.leado.model.LessonItemClass
 import kotlinx.android.synthetic.main.self_awareness_item.view.*
 
 class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {

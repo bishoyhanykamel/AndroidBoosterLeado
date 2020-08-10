@@ -1,4 +1,4 @@
-package com.example.leado;
+package com.example.leado.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

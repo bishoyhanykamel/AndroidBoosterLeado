@@ -1,4 +1,4 @@
-package com.example.leado
+package com.example.leado.model
 
 import android.os.Parcelable
 

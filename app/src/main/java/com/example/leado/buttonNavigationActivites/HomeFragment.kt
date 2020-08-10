@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.leado.AwarenessRoom
-import com.example.leado.LessonItemClass
 import com.example.leado.R
 import com.example.leado.viewModels.HomeViewModel
 import com.example.leado.viewModels.LessonsDataViewModel

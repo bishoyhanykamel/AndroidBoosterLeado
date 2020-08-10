@@ -1,11 +1,12 @@
-package com.example.leado
+package com.example.leado.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.leado.R
+import com.example.leado.model.skillitem
 import kotlinx.android.synthetic.main.profile_items.view.*
-import java.util.zip.Inflater
 
 class skillAdapter (val skillList:List<skillitem>): RecyclerView.Adapter<skillAdapter.skillViewHolder>() {
 

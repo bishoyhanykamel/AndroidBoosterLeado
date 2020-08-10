@@ -26,5 +26,8 @@ class Lesson2 : Fragment() {
         next_btn2.setOnClickListener {
             findNavController().navigate(Lesson2Directions.actionLesson2ToLesson3())
         }
+        takeQuiz1.setOnClickListener {
+            findNavController().navigate(Lesson2Directions.actionLesson2ToQuiz1())
+        }
     }
 }

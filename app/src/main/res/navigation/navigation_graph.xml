@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_lesson2_to_lesson3"
             app:destination="@id/lesson3" />
+        <action
+            android:id="@+id/action_lesson2_to_quiz_1"
+            app:destination="@id/quiz_1" />
     </fragment>
     <fragment
         android:id="@+id/lesson3"
@@ -40,10 +43,31 @@
         <action
             android:id="@+id/action_lesson4_to_refrence"
             app:destination="@id/refrence" />
+        <action
+            android:id="@+id/action_lesson4_to_quiz_2"
+            app:destination="@id/quiz_2" />
     </fragment>
     <fragment
         android:id="@+id/refrence"
         android:name="com.example.leado.couseActivities.Refrence"
         android:label="fragment_refrence"
         tools:layout="@layout/fragment_refrence" />
+    <fragment
+        android:id="@+id/quiz_1"
+        android:name="com.example.leado.couseActivities.Quiz_1"
+        android:label="fragment_quiz_1"
+        tools:layout="@layout/fragment_quiz_1" >
+        <action
+            android:id="@+id/action_quiz_1_to_lesson3"
+            app:destination="@id/lesson3" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz_2"
+        android:name="com.example.leado.couseActivities.Quiz_2"
+        android:label="fragment_quiz_2"
+        tools:layout="@layout/fragment_quiz_2" >
+        <action
+            android:id="@+id/action_quiz_2_to_refrence"
+            app:destination="@id/refrence" />
+    </fragment>
 </navigation>
