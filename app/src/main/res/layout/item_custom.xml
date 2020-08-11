@@ -4,13 +4,14 @@
     android:layout_margin="2dp"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/img_item"
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        android:src="@drawable/person" />
+        android:src="@drawable/person"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
 
     <TextView
         android:id="@+id/name"
@@ -18,8 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_toEndOf="@+id/img_item"
-        android:layout_toRightOf="@+id/img_item"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
         android:padding="10dp"
         android:text="Name"
         android:textColor="#000"
@@ -30,13 +31,13 @@
         android:layout_width="338dp"
         android:layout_height="671dp"
         android:layout_below="@+id/name"
-        android:layout_alignBottom="@+id/img_item"
+        android:layout_alignBottom="@+id/profile_image"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="-20dp"
         android:layout_marginBottom="-628dp"
-        android:layout_toEndOf="@+id/img_item"
-        android:layout_toRightOf="@+id/img_item"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
         android:padding="10dp"
         android:text="000000 points"
         android:textColor="#62000000"

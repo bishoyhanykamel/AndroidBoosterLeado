@@ -1,14 +1,15 @@
 package com.example.leado.couseActivities
 
+import android.app.AlertDialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.leado.R
-import kotlinx.android.synthetic.main.fragment_quiz_1.*
 import kotlinx.android.synthetic.main.fragment_quiz_2.*
+import kotlinx.android.synthetic.main.quiz_dialog.view.*
 
 
 class Quiz_2 : Fragment() {
@@ -26,7 +27,23 @@ class Quiz_2 : Fragment() {
         close_imageBtnQuiz2.setOnClickListener {
             findNavController().navigate(Quiz_2Directions.actionQuiz2ToRefrence())
         }
+        microphone.setOnClickListener {
+            val Dialog = LayoutInflater.from(activity).inflate(R.layout.quiz_dialog, null)
+            val builder = AlertDialog.Builder(activity)
+            builder.setView(Dialog)
+            val alertdialog = builder.show()
+            Dialog.agree_btn.setOnClickListener {
+
+            }
+            Dialog.cancel_btn.setOnClickListener {
+                alertdialog.dismiss()
+            }
+        }
     }
 
+    // fun openDialog() {
+    //  .setPositiveButton("Agree", { dialogInterface: DialogInterface, i: Int -> })
+    //builder.setNegativeButton("Cancel", { dialogInterface: DialogInterface, i: Int -> })
+    //  }
 
 }

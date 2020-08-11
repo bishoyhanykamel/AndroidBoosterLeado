@@ -54,7 +54,7 @@ public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             super(itemView);
             mTv_name = (TextView) itemView.findViewById(R.id.name);
-            mImg = (ImageView) itemView.findViewById(R.id.img_item);
+            mImg = (ImageView) itemView.findViewById(R.id.profile_image);
 
         }
     }

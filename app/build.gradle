@@ -78,5 +78,8 @@ dependencies {
 
     // card view
     implementation "androidx.cardview:cardview:1.0.0"
+    //rouded imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 
 }

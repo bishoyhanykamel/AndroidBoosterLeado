@@ -13,32 +13,32 @@ object AchievementsRepo {
 
         var itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "Hanna"
         mList.add(itemAdapter)
         itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "Emilly"
         mList.add(itemAdapter)
         itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "Ali"
         mList.add(itemAdapter)
         itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "Sally"
         mList.add(itemAdapter)
         itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "Watson"
         mList.add(itemAdapter)
         itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "sara"
         mList.add(itemAdapter)
         mList.add(itemAdapter)
         itemAdapter = ItemAdapter()
         itemAdapter.image = R.drawable.person
-        itemAdapter.text = "Person"
+        itemAdapter.text = "selim"
         mList.add(itemAdapter)
 
         return mList
