@@ -270,18 +270,18 @@
 
         <ImageView
             android:id="@+id/microphone"
-            android:layout_width="20dp"
-            android:layout_height="35dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/microphone"
             app:layout_constraintBottom_toTopOf="@+id/quizQuestion_textView"
             app:layout_constraintEnd_toEndOf="@id/guidelineEnd" />
 
         <ImageView
-            android:layout_width="7dp"
-            android:layout_height="20dp"
+            android:layout_width="10dp"
+            android:layout_height="35dp"
             android:background="@drawable/group"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="7dp"
             app:layout_constraintBottom_toBottomOf="@+id/microphone"
             app:layout_constraintEnd_toStartOf="@+id/microphone"
             app:layout_constraintTop_toTopOf="@+id/microphone" />

@@ -24,13 +24,13 @@ class Before_home_ : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        mindMappingBtnbflogin.setOnClickListener {
+        mindMappingBtnbfhome.setOnClickListener {
             findNavController().navigate(Before_home_Directions.actionBeforeHomeToLogin())
         }
-        selfAwarenessBtnbeforelogin.setOnClickListener {
+        selfAwarenessBtnbfhome.setOnClickListener {
             findNavController().navigate(Before_home_Directions.actionBeforeHomeToLogin())
         }
-        personal_BrandingBtnbflogin.setOnClickListener {
+        personal_BrandingBtnbfhome.setOnClickListener {
             findNavController().navigate(Before_home_Directions.actionBeforeHomeToLogin())
         }
     }
