@@ -28,20 +28,29 @@
 
     <TextView
         android:id="@+id/points"
-        android:layout_width="338dp"
-        android:layout_height="671dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/name"
         android:layout_alignBottom="@+id/profile_image"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
         android:layout_marginTop="-20dp"
-        android:layout_marginBottom="-628dp"
         android:layout_toEndOf="@+id/profile_image"
         android:layout_toRightOf="@+id/profile_image"
         android:padding="10dp"
-        android:text="000000 points"
+        android:text="000000"
         android:textColor="#62000000"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:text="Points"
+        android:padding="10dp"
+        android:textColor="#62000000"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/points"
+        android:layout_below="@+id/name"
+      />
 
 </RelativeLayout>

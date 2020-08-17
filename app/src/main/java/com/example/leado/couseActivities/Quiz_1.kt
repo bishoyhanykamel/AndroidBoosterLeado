@@ -1,10 +1,11 @@
 package com.example.leado.couseActivities
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.leado.R
 import kotlinx.android.synthetic.main.fragment_quiz_1.*
@@ -24,6 +25,9 @@ class Quiz_1 : Fragment() {
         super.onActivityCreated(savedInstanceState)
         close_imageBtnQuiz1.setOnClickListener {
             findNavController().navigate(Quiz_1Directions.actionQuiz1ToLesson3())
+        }
+        quiz1AnswerOne_textView.setOnClickListener {
+
         }
     }
 

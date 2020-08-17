@@ -158,7 +158,7 @@
             app:layout_constraintTop_toBottomOf="@id/subtitle_textView" />
 
         <TextView
-            android:id="@+id/quizAnswerOne_textView"
+            android:id="@+id/quiz2AnswerOne_textView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="32dp"
@@ -175,9 +175,9 @@
             android:id="@+id/answer1hint_txtvw"
             style="@style/answer_hint_style"
             android:text="Answer 1"
-            app:layout_constraintBottom_toBottomOf="@id/quizAnswerOne_textView"
-            app:layout_constraintEnd_toEndOf="@id/quizAnswerOne_textView"
-            app:layout_constraintStart_toStartOf="@id/quizAnswerOne_textView" />
+            app:layout_constraintBottom_toBottomOf="@id/quiz2AnswerOne_textView"
+            app:layout_constraintEnd_toEndOf="@id/quiz2AnswerOne_textView"
+            app:layout_constraintStart_toStartOf="@id/quiz2AnswerOne_textView" />
 
 
         <TextView
@@ -192,7 +192,7 @@
             app:layout_constraintBottom_toTopOf="@+id/guidelineQuizEnd"
             app:layout_constraintEnd_toEndOf="@id/guidelineMiddle"
             app:layout_constraintStart_toStartOf="@id/guidelineStartUpper"
-            app:layout_constraintTop_toBottomOf="@id/quizAnswerOne_textView" />
+            app:layout_constraintTop_toBottomOf="@id/quiz2AnswerOne_textView" />
 
         <TextView
             android:id="@+id/answer2hint_txtvw"

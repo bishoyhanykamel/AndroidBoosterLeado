@@ -84,7 +84,7 @@
             app:layout_constraintTop_toBottomOf="@id/layout11" />
 
         <TextView
-            android:id="@+id/line2"
+            android:id="@+id/prof_points"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="200"
@@ -104,7 +104,7 @@
             android:textSize="20sp"
             android:paddingHorizontal="55dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/line2"
+            app:layout_constraintStart_toEndOf="@id/prof_points"
             app:layout_constraintTop_toBottomOf="@+id/layout11" />
 
         <TextView
@@ -129,7 +129,7 @@
             android:paddingHorizontal="45dp"
             app:layout_constraintStart_toEndOf="@id/line4"
             app:layout_constraintEnd_toStartOf="@id/line6"
-            app:layout_constraintTop_toBottomOf="@id/line2"
+            app:layout_constraintTop_toBottomOf="@id/prof_points"
             />
         <TextView
             android:id="@+id/line6"

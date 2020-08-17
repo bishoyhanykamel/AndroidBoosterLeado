@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.leado.R
+import kotlinx.android.synthetic.main.fragment_quiz_1.*
 import kotlinx.android.synthetic.main.fragment_quiz_2.*
 import kotlinx.android.synthetic.main.quiz_dialog.view.*
 
@@ -38,12 +39,9 @@ class Quiz_2 : Fragment() {
             Dialog.cancel_btn.setOnClickListener {
                 alertdialog.dismiss()
             }
+            quiz2AnswerOne_textView.setOnClickListener{
+
+            }
         }
     }
-
-    // fun openDialog() {
-    //  .setPositiveButton("Agree", { dialogInterface: DialogInterface, i: Int -> })
-    //builder.setNegativeButton("Cancel", { dialogInterface: DialogInterface, i: Int -> })
-    //  }
-
 }
