@@ -25,7 +25,7 @@ class Congrats_3 : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         claim_Your_Gift.setOnClickListener {
-            val intent:Intent= Intent(activity,AwarenessRoom_fourth::class.java)
+            val intent:Intent= Intent(activity, AwarenessRoom_fourth::class.java)
             activity?.startActivity(intent)
         }
     }

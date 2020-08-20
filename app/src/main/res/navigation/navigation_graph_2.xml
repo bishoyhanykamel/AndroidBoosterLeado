@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_congrats_2_to_awarenessRoom2_"
             app:destination="@id/awarenessRoom2_" />
+        <action
+            android:id="@+id/action_congrats_2_to_profileFragment_2"
+            app:destination="@id/profileFragment_2" />
     </fragment>
     <fragment
         android:id="@+id/lesson1_24"
@@ -88,4 +91,9 @@
         android:name="com.example.leado.couse2Activities.AwarenessRoom2_"
         android:label="fragment_awareness_room2_"
         tools:layout="@layout/fragment_awareness_room2_" />
+    <fragment
+        android:id="@+id/profileFragment_2"
+        android:name="com.example.leado.buttonNavigationActivites.ProfileFragment_"
+        android:label="fragment_profile_"
+        tools:layout="@layout/fragment_profile_" />
 </navigation>

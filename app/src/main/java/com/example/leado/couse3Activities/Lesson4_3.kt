@@ -23,7 +23,7 @@ class Lesson4_3 : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         next_btn4.setOnClickListener {
-            findNavController().navigate(Lesson2_2Directions.actionLesson222ToLesson322())
+            findNavController().navigate(Lesson4_3Directions.actionLesson43ToRefrence3())
         }
         takeQuiz2.setOnClickListener {
             findNavController().navigate(Lesson4_3Directions.actionLesson43ToQuiz23())

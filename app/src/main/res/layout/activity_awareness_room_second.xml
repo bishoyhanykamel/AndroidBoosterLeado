@@ -69,29 +69,18 @@
             app:layout_constraintStart_toEndOf="@+id/second"
             app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
-        <ImageView
-            android:id="@+id/fourth"
-            android:layout_width="26.39dp"
-            android:layout_height="6.6dp"
-            android:layout_marginStart="11.22dp"
-            android:layout_marginTop="3.3dp"
-            android:background="@drawable/rectangle_copy"
-            app:layout_constraintEnd_toStartOf="@id/fifth"
-            app:layout_constraintStart_toEndOf="@id/third"
-            app:layout_constraintTop_toBottomOf="@+id/LessonName" />
+    <ImageView
+        android:id="@+id/fourth"
+        android:layout_width="26.39dp"
+        android:layout_height="6.6dp"
+        android:layout_marginStart="11.22dp"
+        android:layout_marginTop="3.3dp"
+        android:background="@drawable/rectangle_copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/third"
+        app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
-        <ImageView
-            android:id="@+id/fifth"
-            android:layout_width="26.39dp"
-            android:layout_height="6.6dp"
-            android:layout_marginStart="11.22dp"
-            android:layout_marginTop="3.3dp"
-            android:background="@drawable/rectangle_copy"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/fourth"
-            app:layout_constraintTop_toBottomOf="@id/LessonName" />
-
-        <ImageView
+    <ImageView
             android:id="@+id/book_shelf"
             android:layout_width="30dp"
             android:layout_height="62dp"
