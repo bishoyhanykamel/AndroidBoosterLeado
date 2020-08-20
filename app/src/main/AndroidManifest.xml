@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".couse3Activities.VideoActivity3"></activity>
+        <activity android:name=".AwarenessRoom_fourth"></activity>
+        <activity android:name=".couse3Activities.VideoActivity3" />
         <activity android:name=".AwarenessRoom_third" />
         <activity android:name=".AwarenessRoom_second" />
         <activity android:name=".AwarenessRoom_first" />
