@@ -1,10 +1,8 @@
-package com.example.leado.couseActivities
+package com.example.leado.couse1Activities
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.leado.R
-import com.example.leado.buttonNavigationActivites.ProfileFragment_
 
 
 class VideoActivity : AppCompatActivity() {
@@ -12,5 +10,7 @@ class VideoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video)
 
+
     }
+
 }

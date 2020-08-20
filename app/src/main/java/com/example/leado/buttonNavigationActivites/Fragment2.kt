@@ -1,6 +1,6 @@
 package com.example.leado.buttonNavigationActivites
 
-import android.R.id.message
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -18,5 +18,7 @@ class Fragment2 : AppCompatActivity() {
         val mainNavigation = findNavController(R.id.host1_fragment)
         nav_btn.setupWithNavController(mainNavigation)
 
+      //  val i = Intent()
+       // val value: Int = i.getIntExtra("key",1)
     }
 }

@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_navigation_home_to_achievements_"
             app:destination="@id/achievements_" />
+        <action
+            android:id="@+id/action_navigation_home_to_profileFragment_"
+            app:destination="@id/profileFragment_" />
+        <action
+            android:id="@+id/action_navigation_home_to_profileFragment_2"
+            app:destination="@id/profileFragment_" />
     </fragment>
 
     <fragment

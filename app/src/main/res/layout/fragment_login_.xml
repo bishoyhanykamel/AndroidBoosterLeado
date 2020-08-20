@@ -70,6 +70,7 @@
             android:id="@+id/editText"
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:paddingLeft="15dp"
             android:background="@drawable/user_name_and_pass"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

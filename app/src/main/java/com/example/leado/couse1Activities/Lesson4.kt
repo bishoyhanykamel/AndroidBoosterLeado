@@ -1,4 +1,4 @@
-package com.example.leado.couseActivities
+package com.example.leado.couse1Activities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.leado.couseActivities.Lesson4Directions
 import com.example.leado.R
-import kotlinx.android.synthetic.main.fragment_lesson2.*
 import kotlinx.android.synthetic.main.fragment_lesson4.*
 
 class Lesson4 : Fragment() {

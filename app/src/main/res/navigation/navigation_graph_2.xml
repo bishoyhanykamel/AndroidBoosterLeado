@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph_2"
+    app:startDestination="@id/lesson1_24">
+
+    <fragment
+        android:id="@+id/congrats_2"
+        android:name="com.example.leado.couse2Activities.Congrats_2"
+        android:label="fragment_congrats_2"
+        tools:layout="@layout/fragment_congrats_2" >
+        <action
+            android:id="@+id/action_congrats_2_to_awarenessRoom2_"
+            app:destination="@id/awarenessRoom2_" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson1_24"
+        android:name="com.example.leado.couse2Activities.Lesson1_2"
+        android:label="fragment_lesson1_2"
+        tools:layout="@layout/fragment_lesson1_2" >
+        <action
+            android:id="@+id/action_lesson1_24_to_lesson2_22"
+            app:destination="@id/lesson2_22" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson2_22"
+        android:name="com.example.leado.couse2Activities.Lesson2_2"
+        android:label="fragment_lesson2_2"
+        tools:layout="@layout/fragment_lesson2_2" >
+        <action
+            android:id="@+id/action_lesson2_22_to_quiz1_22"
+            app:destination="@id/quiz1_22" />
+        <action
+            android:id="@+id/action_lesson2_22_to_lesson3_22"
+            app:destination="@id/lesson3_22" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz2_22"
+        android:name="com.example.leado.couse2Activities.Quiz2_2"
+        android:label="fragment_quiz2_2"
+        tools:layout="@layout/fragment_quiz2_2" >
+        <action
+            android:id="@+id/action_quiz2_22_to_refrence_22"
+            app:destination="@id/refrence_22" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz1_22"
+        android:name="com.example.leado.couse2Activities.Quiz1_2"
+        android:label="fragment_quiz1_2"
+        tools:layout="@layout/fragment_quiz1_2" >
+        <action
+            android:id="@+id/action_quiz1_22_to_lesson3_22"
+            app:destination="@id/lesson3_22" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson3_22"
+        android:name="com.example.leado.couse2Activities.Lesson3_2"
+        android:label="fragment_lesson3_2"
+        tools:layout="@layout/fragment_lesson3_2" >
+        <action
+            android:id="@+id/action_lesson3_22_to_lesson4_22"
+            app:destination="@id/lesson4_22" />
+    </fragment>
+    <fragment
+        android:id="@+id/lesson4_22"
+        android:name="com.example.leado.couse2Activities.Lesson4_2"
+        android:label="fragment_lesson4_2"
+        tools:layout="@layout/fragment_lesson4_2" >
+        <action
+            android:id="@+id/action_lesson4_22_to_quiz2_22"
+            app:destination="@id/quiz2_22" />
+        <action
+            android:id="@+id/action_lesson4_22_to_refrence_22"
+            app:destination="@id/refrence_22" />
+    </fragment>
+    <fragment
+        android:id="@+id/refrence_22"
+        android:name="com.example.leado.couse2Activities.Refrence_2"
+        android:label="fragment_refrence_2"
+        tools:layout="@layout/fragment_refrence_2" >
+        <action
+            android:id="@+id/action_refrence_22_to_congrats_2"
+            app:destination="@id/congrats_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/awarenessRoom2_"
+        android:name="com.example.leado.couse2Activities.AwarenessRoom2_"
+        android:label="fragment_awareness_room2_"
+        tools:layout="@layout/fragment_awareness_room2_" />
+</navigation>

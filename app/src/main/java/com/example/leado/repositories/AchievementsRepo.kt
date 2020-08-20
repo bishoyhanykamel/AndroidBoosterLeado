@@ -6,7 +6,6 @@ import java.util.*
 
 object AchievementsRepo {
 
-
      fun getAchievementsList(): ArrayList<ItemAdapter> {
 
         val mList: ArrayList<ItemAdapter> = ArrayList()

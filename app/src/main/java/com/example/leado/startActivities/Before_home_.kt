@@ -33,6 +33,7 @@ class Before_home_ : Fragment() {
         personal_BrandingBtnbfhome.setOnClickListener {
             findNavController().navigate(Before_home_Directions.actionBeforeHomeToLogin())
         }
+
     }
 
 }

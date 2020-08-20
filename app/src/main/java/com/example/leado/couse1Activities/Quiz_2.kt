@@ -1,4 +1,4 @@
-package com.example.leado.couseActivities
+package com.example.leado.couse1Activities
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.leado.R
-import kotlinx.android.synthetic.main.fragment_quiz_1.*
 import kotlinx.android.synthetic.main.fragment_quiz_2.*
 import kotlinx.android.synthetic.main.quiz_dialog.view.*
 

@@ -1,4 +1,4 @@
-package com.example.leado.couseActivities
+package com.example.leado.couse1Activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,26 +6,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.leado.CongratsScreen
+import androidx.navigation.fragment.findNavController
+import com.example.leado.AwarenessRoom_first
+import com.example.leado.AwarenessRoom_second
 import com.example.leado.R
-import kotlinx.android.synthetic.main.fragment_refrence.*
+import kotlinx.android.synthetic.main.fragment_congrats.*
 
-class Refrence : Fragment() {
+class Congrats : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_refrence, container, false)
+        return inflater.inflate(R.layout.fragment_congrats, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        next_btn5.setOnClickListener {
-            val intent = Intent (getActivity(), CongratsScreen::class.java)
-            getActivity()?.startActivity(intent)
+        claim_Your_Gift.setOnClickListener {
+            val intent:Intent=Intent(activity,AwarenessRoom_second::class.java)
+           activity?.startActivity(intent)
         }
-
     }
 }

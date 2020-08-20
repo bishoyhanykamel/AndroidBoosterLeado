@@ -6,17 +6,8 @@
     app:startDestination="@id/lesson1">
 
     <fragment
-        android:id="@+id/lesson1"
-        android:name="com.example.leado.couseActivities.Lesson1"
-        android:label="fragment_lesson1"
-        tools:layout="@layout/fragment_lesson1" >
-        <action
-            android:id="@+id/action_lesson1_to_lesson2"
-            app:destination="@id/lesson2" />
-    </fragment>
-    <fragment
         android:id="@+id/lesson2"
-        android:name="com.example.leado.couseActivities.Lesson2"
+        android:name="com.example.leado.couse1Activities.Lesson2"
         android:label="fragment_lesson2"
         tools:layout="@layout/fragment_lesson2" >
         <action
@@ -28,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/lesson3"
-        android:name="com.example.leado.couseActivities.Lesson3"
+        android:name="com.example.leado.couse1Activities.Lesson3"
         android:label="fragment_lesson3"
         tools:layout="@layout/fragment_lesson3" >
         <action
@@ -37,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/lesson4"
-        android:name="com.example.leado.couseActivities.Lesson4"
+        android:name="com.example.leado.couse1Activities.Lesson4"
         android:label="fragment_lesson4"
         tools:layout="@layout/fragment_lesson4" >
         <action
@@ -49,12 +40,16 @@
     </fragment>
     <fragment
         android:id="@+id/refrence"
-        android:name="com.example.leado.couseActivities.Refrence"
+        android:name="com.example.leado.couse1Activities.Refrence"
         android:label="fragment_refrence"
-        tools:layout="@layout/fragment_refrence" />
+        tools:layout="@layout/fragment_refrence" >
+        <action
+            android:id="@+id/action_refrence_to_congrats2"
+            app:destination="@id/congrats2" />
+    </fragment>
     <fragment
         android:id="@+id/quiz_1"
-        android:name="com.example.leado.couseActivities.Quiz_1"
+        android:name="com.example.leado.couse1Activities.Quiz_1"
         android:label="fragment_quiz_1"
         tools:layout="@layout/fragment_quiz_1" >
         <action
@@ -63,11 +58,25 @@
     </fragment>
     <fragment
         android:id="@+id/quiz_2"
-        android:name="com.example.leado.couseActivities.Quiz_2"
+        android:name="com.example.leado.couse1Activities.Quiz_2"
         android:label="fragment_quiz_2"
         tools:layout="@layout/fragment_quiz_2" >
         <action
             android:id="@+id/action_quiz_2_to_refrence"
             app:destination="@id/refrence" />
+    </fragment>
+    <fragment
+        android:id="@+id/congrats2"
+        android:name="com.example.leado.couse1Activities.Congrats"
+        android:label="fragment_congrats"
+        tools:layout="@layout/fragment_congrats" />
+    <fragment
+        android:id="@+id/lesson1"
+        android:name="com.example.leado.couse1Activities.Lesson1"
+        android:label="fragment_lesson1"
+        tools:layout="@layout/fragment_lesson1" >
+        <action
+            android:id="@+id/action_lesson1_to_lesson2"
+            app:destination="@id/lesson2" />
     </fragment>
 </navigation>

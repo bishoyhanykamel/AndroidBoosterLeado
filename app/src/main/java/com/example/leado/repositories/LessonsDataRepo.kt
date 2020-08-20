@@ -37,7 +37,7 @@ object LessonsDataRepo {
         )
         LessonData.add(
             LessonItemClass(
-                "Improving your self-awareness ",
+                "Improving your self-awareness",
                 "Lesson 4",
                 "Building an integral support system,\n" +
                         "Pushes you to grow, strech more, mainly asks why things wont work, and bullet proofs ideas",

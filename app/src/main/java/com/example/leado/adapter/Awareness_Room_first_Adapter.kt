@@ -9,11 +9,12 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.leado.R
-import com.example.leado.couseActivities.VideoActivity
+import com.example.leado.couse1Activities.VideoActivity
+import com.example.leado.couse2Activities.VideoActivity2
 import com.example.leado.model.LessonItemClass
 import kotlinx.android.synthetic.main.self_awareness_item.view.*
 
-class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
+class AwarnessRoomFirstAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Adapter<AwarnessRoomFirstAdapter.SelfAwarnessItemViewHolder>() {
 
 
     inner class SelfAwarnessItemViewHolder(SelfAwarnessItemView: View) : RecyclerView.ViewHolder(SelfAwarnessItemView) {
@@ -36,12 +37,11 @@ class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Ad
         holder.itembutton.text=lessonItemClass.buttonText
         holder.itembutton.setBackgroundResource(R.drawable.lock_button)
         if(position==0){
-        holder.itembutton.setBackgroundResource(R.drawable.start_button)
-        val context: Context = holder.itemView.context
-        holder.itembutton.setOnClickListener {
-            val intent:Intent = Intent(context,
-                VideoActivity::class.java)
-            context.startActivity(intent)}
+            holder.itembutton.setBackgroundResource(R.drawable.start_button)
+            val context: Context = holder.itemView.context
+            holder.itembutton.setOnClickListener {
+                val intent: Intent = Intent(context, VideoActivity::class.java)
+                context.startActivity(intent)}
         }
 
     }
