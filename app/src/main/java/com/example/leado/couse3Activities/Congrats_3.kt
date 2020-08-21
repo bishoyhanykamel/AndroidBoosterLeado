@@ -32,5 +32,8 @@ class Congrats_3 : Fragment() {
         AchievementsBtn.setOnClickListener {
             findNavController().navigate(Congrats_3Directions.actionCongrats3ToAchievements3())
         }
+        imageButton.setOnClickListener {
+            findNavController().navigate(Congrats_3Directions.actionCongrats3ToShare4())
+        }
     }
 }

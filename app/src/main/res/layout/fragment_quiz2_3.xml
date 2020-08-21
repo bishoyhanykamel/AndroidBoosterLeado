@@ -282,9 +282,9 @@
             android:layout_width="10dp"
             android:layout_height="35dp"
             android:background="@drawable/group"
-            android:layout_marginRight="7dp"
-            app:layout_constraintBottom_toBottomOf="@+id/microphone"
-            app:layout_constraintEnd_toStartOf="@+id/microphone"
+            android:layout_marginRight="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/microphone2"
+            app:layout_constraintEnd_toStartOf="@+id/microphone2"
             app:layout_constraintTop_toTopOf="@+id/microphone" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

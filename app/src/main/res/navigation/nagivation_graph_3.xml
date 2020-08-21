@@ -82,10 +82,18 @@
         <action
             android:id="@+id/action_congrats_3_to_achievements_3"
             app:destination="@id/achievements_3" />
+        <action
+            android:id="@+id/action_congrats_3_to_share4"
+            app:destination="@id/share4" />
     </fragment>
     <fragment
         android:id="@+id/achievements_3"
         android:name="com.example.leado.buttonNavigationActivites.Achievements_"
         android:label="fragment_achievements_"
         tools:layout="@layout/fragment_achievements_" />
+    <fragment
+        android:id="@+id/share4"
+        android:name="com.example.leado.share"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
 </navigation>

@@ -31,9 +31,6 @@ class Achievements_ : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         achievementsRecycler.adapter = ListAdapter(achievementsViewModel.sortList(), activity)
-        achievementsbackbtn.setOnClickListener {
-            findNavController().navigate(Achievements_Directions.actionAchievementsToNavigationHome())
-        }
 
     }
 

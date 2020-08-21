@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:background="#d2fcfa"
         tools:context=".AwarenessRoom_2">
+
         <TextView
             android:id="@+id/LessonName"
             android:layout_width="wrap_content"
@@ -134,6 +135,15 @@
             android:layout_marginLeft="5dp"
             app:layout_constraintBottom_toTopOf="@+id/Strenth_Weakness"
             app:layout_constraintStart_toEndOf="@+id/info2" />
+
+        <ImageView
+            android:id="@+id/checked4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/checked"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/GoalsAspiration"
+            app:layout_constraintStart_toEndOf="@+id/info3" />
         <TextView
             android:id="@+id/coreValue"
             android:layout_width="122.39dp"
@@ -237,13 +247,20 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/cardView" />
+                <Button
+                    android:id="@+id/claim_Your_Gift"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/whitebg"
+                    android:text="claim your gift"
+                    android:elevation="5dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginHorizontal="110dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/card_view_outer" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/main_recyclerview"
-                    android:layout_width="match_parent"
-                    android:layout_height="418dp"
-                    android:orientation="horizontal"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

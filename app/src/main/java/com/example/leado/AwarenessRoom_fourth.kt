@@ -3,6 +3,7 @@ package com.example.leado
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.core.content.ContextCompat
 import com.example.leado.adapter.AwarnessRoomfourthAdapter
 import com.example.leado.viewModels.LessonsDataViewModel
@@ -15,7 +16,7 @@ class AwarenessRoom_fourth : AppCompatActivity() {
 
         val lessonsDataViewModel:LessonsDataViewModel= LessonsDataViewModel()
 
-        main_recyclerview.adapter = AwarnessRoomfourthAdapter(lessonsDataViewModel.getLessonsDataMind())
+       // main_recyclerview.adapter = AwarnessRoomfourthAdapter(lessonsDataViewModel.getLessonsDataMind())
 
         GoalsAspiration.setOnClickListener {
             info3.background = ContextCompat.getDrawable(this, R.drawable.ic_lesson_three_vector)
@@ -23,6 +24,9 @@ class AwarenessRoom_fourth : AppCompatActivity() {
             info3.layoutParams.height= 162
             GoalsAspiration.background = ContextCompat.getDrawable(this, R.drawable.rectangle_3)
             GoalsAspiration.setTextColor(Color.parseColor("#000000"))
+        }
+        claim_Your_Gift.setOnClickListener {
+            checked4.visibility= View.VISIBLE
         }
 
     }

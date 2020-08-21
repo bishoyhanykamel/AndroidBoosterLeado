@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_congrats2_to_achievements_2"
             app:destination="@id/achievements_2" />
+        <action
+            android:id="@+id/action_congrats2_to_share2"
+            app:destination="@id/share2" />
     </fragment>
     <fragment
         android:id="@+id/lesson1"
@@ -88,4 +91,9 @@
         android:name="com.example.leado.buttonNavigationActivites.Achievements_"
         android:label="fragment_achievements_"
         tools:layout="@layout/fragment_achievements_" />
+    <fragment
+        android:id="@+id/share2"
+        android:name="com.example.leado.share"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
 </navigation>
