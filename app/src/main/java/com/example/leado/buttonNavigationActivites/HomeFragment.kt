@@ -24,12 +24,6 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    //  val textView: TextView = root.findViewById(R.id.text_home)
-    //   homeViewModel.text.observe(viewLifecycleOwner, Observer {
-    //   textView.text = it
-    //    })
-    //    return root
-    //  }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val lessonsDataViewModel = LessonsDataViewModel()
@@ -37,11 +31,11 @@ class HomeFragment : Fragment() {
         selfAwarenessBtn.setOnClickListener {
             val intent = Intent(getActivity(), AwarenessRoom::class.java)
             intent.putExtra("lessonName", "Awareness Room")
-            intent.putExtra("lessonNameRecycler", "Self-Awareness")
+         //   intent.putExtra("lessonNameRecycler", "Self-Awareness")
             getActivity()?.startActivity(intent)
 
         }
-        mindMappingBtn.setOnClickListener {
+     /*   mindMappingBtn.setOnClickListener {
             val intent = Intent(getActivity(), AwarenessRoom::class.java)
             intent.putExtra("lessonName", "mind mapping")
             intent.putExtra("lessonNameRecycler", "mind mapping")
@@ -55,7 +49,7 @@ class HomeFragment : Fragment() {
             getActivity()?.startActivity(intent)
             //   intent.putExtra("lessonName",)
         }
-
+*/
     }
 
 }

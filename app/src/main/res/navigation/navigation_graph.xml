@@ -51,7 +51,11 @@
         android:id="@+id/refrence"
         android:name="com.example.leado.couseActivities.Refrence"
         android:label="fragment_refrence"
-        tools:layout="@layout/fragment_refrence" />
+        tools:layout="@layout/fragment_refrence" >
+        <action
+            android:id="@+id/action_refrence_to_congrats2"
+            app:destination="@id/congrats2" />
+    </fragment>
     <fragment
         android:id="@+id/quiz_1"
         android:name="com.example.leado.couseActivities.Quiz_1"
@@ -70,4 +74,9 @@
             android:id="@+id/action_quiz_2_to_refrence"
             app:destination="@id/refrence" />
     </fragment>
+    <fragment
+        android:id="@+id/congrats2"
+        android:name="com.example.leado.couseActivities.Congrats"
+        android:label="fragment_congrats"
+        tools:layout="@layout/fragment_congrats" />
 </navigation>

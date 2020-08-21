@@ -34,6 +34,41 @@
         app:layout_constraintTop_toBottomOf="@+id/LessonName" />
 
     <ImageView
+        android:id="@+id/checked1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:background="@drawable/checked"
+        app:layout_constraintBottom_toTopOf="@+id/lesson1btn"
+        app:layout_constraintStart_toEndOf="@+id/book_shelf" />
+
+    <ImageView
+        android:id="@+id/checked2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checked"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/coreValue"
+        app:layout_constraintStart_toEndOf="@+id/info1" />
+
+    <ImageView
+        android:id="@+id/checked3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checked"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Strenth_Weakness"
+        app:layout_constraintStart_toEndOf="@+id/info2" />
+
+    <ImageView
+        android:id="@+id/checked4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checked"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/GoalsAspiration"
+        app:layout_constraintStart_toEndOf="@+id/info3" />
+    <ImageView
         android:id="@+id/second"
         android:layout_width="26.39dp"
         android:layout_height="6.6dp"
@@ -63,20 +98,9 @@
         android:layout_marginStart="11.22dp"
         android:layout_marginTop="3.3dp"
         android:background="@drawable/rectangle_copy"
-        app:layout_constraintEnd_toStartOf="@id/fifth"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/third"
         app:layout_constraintTop_toBottomOf="@+id/LessonName" />
-
-    <ImageView
-        android:id="@+id/fifth"
-        android:layout_width="26.39dp"
-        android:layout_height="6.6dp"
-        android:layout_marginStart="11.22dp"
-        android:layout_marginTop="3.3dp"
-        android:background="@drawable/rectangle_copy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fourth"
-        app:layout_constraintTop_toBottomOf="@id/LessonName" />
 
     <ImageView
         android:id="@+id/book_shelf"

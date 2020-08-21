@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.leado.CongratsScreen
+import androidx.navigation.fragment.findNavController
 import com.example.leado.R
 import kotlinx.android.synthetic.main.fragment_refrence.*
 
@@ -23,8 +23,7 @@ class Refrence : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         next_btn5.setOnClickListener {
-            val intent = Intent (getActivity(), CongratsScreen::class.java)
-            getActivity()?.startActivity(intent)
+           findNavController().navigate(RefrenceDirections.actionRefrenceToCongrats2())
         }
 
     }
