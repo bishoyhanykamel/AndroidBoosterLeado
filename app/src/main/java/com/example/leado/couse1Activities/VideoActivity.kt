@@ -16,8 +16,6 @@ import kotlinx.android.synthetic.main.fragment_refrence.*
 
 class VideoActivity : AppCompatActivity() {
 
-    val videoid = "n0gNe0xVKo8"
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video)
@@ -30,6 +28,7 @@ class VideoActivity : AppCompatActivity() {
     }
 
     fun initVideo(youtube_view: YouTubePlayerView) {
+        val videoid = "n0gNe0xVKo8"
         youtube_view.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
             override fun onReady(@NonNull youTubePlayer: YouTubePlayer) {
                 youTubePlayer.loadVideo(videoid, 0f)
