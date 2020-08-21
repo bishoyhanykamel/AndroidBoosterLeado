@@ -141,7 +141,7 @@
         </LinearLayout>
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/youtube_videoPlayer"
+            android:id="@+id/youtube_videoPlayer2"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:showFullScreenButton="false"
