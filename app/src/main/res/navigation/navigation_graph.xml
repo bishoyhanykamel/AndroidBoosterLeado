@@ -69,7 +69,11 @@
         android:id="@+id/congrats2"
         android:name="com.example.leado.couse1Activities.Congrats"
         android:label="fragment_congrats"
-        tools:layout="@layout/fragment_congrats" />
+        tools:layout="@layout/fragment_congrats" >
+        <action
+            android:id="@+id/action_congrats2_to_achievements_2"
+            app:destination="@id/achievements_2" />
+    </fragment>
     <fragment
         android:id="@+id/lesson1"
         android:name="com.example.leado.couse1Activities.Lesson1"
@@ -79,4 +83,9 @@
             android:id="@+id/action_lesson1_to_lesson2"
             app:destination="@id/lesson2" />
     </fragment>
+    <fragment
+        android:id="@+id/achievements_2"
+        android:name="com.example.leado.buttonNavigationActivites.Achievements_"
+        android:label="fragment_achievements_"
+        tools:layout="@layout/fragment_achievements_" />
 </navigation>

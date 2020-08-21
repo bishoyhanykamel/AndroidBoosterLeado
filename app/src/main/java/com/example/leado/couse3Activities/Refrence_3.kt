@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.leado.AwarenessRoom_fourth
 import com.example.leado.R
+import kotlinx.android.synthetic.main.fragment_refrence_3.*
 
 class Refrence_3 : Fragment() {
 
@@ -21,8 +22,11 @@ class Refrence_3 : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        next_btn5.setOnClickListener {
         val i = Intent(activity,AwarenessRoom_fourth::class.java)
         activity?.startActivity(i)
+        }
+
     }
 
 }

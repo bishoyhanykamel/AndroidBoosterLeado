@@ -18,6 +18,5 @@ class CongratsScreen : AppCompatActivity() {
           startActivity(intent)
       }
 
-
         }
     }

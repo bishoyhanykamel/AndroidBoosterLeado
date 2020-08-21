@@ -28,5 +28,8 @@ class Congrats_2 : Fragment() {
             val intent:Intent=Intent(activity, AwarenessRoom_third::class.java)
             activity?.startActivity(intent)
         }
+        AchievementsBtn.setOnClickListener {
+            findNavController().navigate(Congrats_2Directions.actionCongrats2ToAchievements4())
+        }
     }
 }

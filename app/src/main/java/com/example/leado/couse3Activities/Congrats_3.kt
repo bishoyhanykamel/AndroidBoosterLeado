@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.leado.AwarenessRoom_fourth
 import com.example.leado.AwarenessRoom_third
 import com.example.leado.R
@@ -27,6 +28,9 @@ class Congrats_3 : Fragment() {
         claim_Your_Gift.setOnClickListener {
             val intent:Intent= Intent(activity, AwarenessRoom_fourth::class.java)
             activity?.startActivity(intent)
+        }
+        AchievementsBtn.setOnClickListener {
+            findNavController().navigate(Congrats_3Directions.actionCongrats3ToAchievements3())
         }
     }
 }
