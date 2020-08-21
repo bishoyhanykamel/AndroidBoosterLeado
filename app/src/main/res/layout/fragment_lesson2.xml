@@ -138,15 +138,17 @@
 
         </LinearLayout>
 
-        <!-- TODO embed youtube video instead of image-->
-        <ImageView
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_videoPlayer2"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@mipmap/ic_launcher"
+            app:showFullScreenButton="false"
+            app:videoId="n0gNe0xVKo8"
             app:layout_constraintTop_toTopOf="@id/guidelineStartVideo"
             app:layout_constraintBottom_toBottomOf="@id/guidelineEndVideo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
         <TextView
             android:layout_width="0dp"
