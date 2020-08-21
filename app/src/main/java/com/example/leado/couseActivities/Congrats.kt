@@ -40,6 +40,13 @@ class Congrats : Fragment() {
                // intent.putExtra("lessonNameRecycler", "personal-Branding")
                 getActivity()?.startActivity(intent)
             }
+            if(click==3){
+                val intent = Intent(getActivity(), AwarenessRoom::class.java)
+                intent.putExtra("click", "three")
+                // intent.putExtra("lessonNameRecycler", "personal-Branding")
+                getActivity()?.startActivity(intent)
+            }
+
         }
     }
 }

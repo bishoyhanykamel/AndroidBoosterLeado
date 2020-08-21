@@ -13,10 +13,14 @@ import com.example.leado.couseActivities.VideoActivity
 import com.example.leado.model.LessonItemClass
 import kotlinx.android.synthetic.main.self_awareness_item.view.*
 
-class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
+var startClick: Int = 0
+
+class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) :
+    RecyclerView.Adapter<AwarnessRoomAdapter.SelfAwarnessItemViewHolder>() {
 
 
-    inner class SelfAwarnessItemViewHolder(SelfAwarnessItemView: View) : RecyclerView.ViewHolder(SelfAwarnessItemView) {
+    inner class SelfAwarnessItemViewHolder(SelfAwarnessItemView: View) :
+        RecyclerView.ViewHolder(SelfAwarnessItemView) {
         val itemtitle: TextView = SelfAwarnessItemView.TitleText
         val lesson: TextView = SelfAwarnessItemView.Lesson
         val lessonText: TextView = SelfAwarnessItemView.lessonText
@@ -25,7 +29,13 @@ class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Ad
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SelfAwarnessItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return SelfAwarnessItemViewHolder(layoutInflater.inflate(R.layout.self_awareness_item, parent, false))
+        return SelfAwarnessItemViewHolder(
+            layoutInflater.inflate(
+                R.layout.self_awareness_item,
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: SelfAwarnessItemViewHolder, position: Int) {
@@ -33,15 +43,26 @@ class AwarnessRoomAdapter(val itemlist: List<LessonItemClass>) : RecyclerView.Ad
         holder.itemtitle.text = lessonItemClass.litle
         holder.lesson.text = lessonItemClass.lesson
         holder.lessonText.text = lessonItemClass.lessonText
-        holder.itembutton.text=lessonItemClass.buttonText
+        holder.itembutton.text = lessonItemClass.buttonText
         holder.itembutton.setBackgroundResource(R.drawable.lock_button)
-        if(position==0){
-        holder.itembutton.setBackgroundResource(R.drawable.start_button)
-        val context: Context = holder.itemView.context
-        holder.itembutton.setOnClickListener {
-            val intent:Intent = Intent(context,
-                VideoActivity::class.java)
-            context.startActivity(intent)}
+        if (position == 0) {
+            holder.itembutton.setBackgroundResource(R.drawable.start_button)
+            val context: Context = holder.itemView.context
+            holder.itembutton.setOnClickListener {
+                startClick++
+                if (startClick == 1) {
+                    val intent: Intent = Intent(context, VideoActivity::class.java)
+                    intent.putExtra("lessonName", "mind mapping")
+                    context.startActivity(intent)
+                } else if (startClick == 2) {
+                    val intent: Intent = Intent(context, VideoActivity::class.java)
+                    intent.putExtra("lessonName", "personal-Branding")
+                    context.startActivity(intent)
+                } else {
+                    val intent: Intent = Intent(context, VideoActivity::class.java)
+                    context.startActivity(intent)
+                }
+            }
         }
 
     }

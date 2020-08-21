@@ -75,7 +75,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Lesson Name"
+            android:paddingHorizontal="60dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Examples self-awareness"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
@@ -87,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Lesson 2"
-            app:layout_constraintEnd_toStartOf="@id/lessonName_textView"
+            app:layout_constraintEnd_toStartOf="@+id/lesson1_layout"
             app:layout_constraintStart_toStartOf="@id/progressImage_imageView"
             app:layout_constraintTop_toBottomOf="@id/progressImage_imageView" />
 
@@ -96,9 +99,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@+id/lessonName_textView"
-            app:layout_constraintStart_toStartOf="@+id/lessonName_textView"
-            app:layout_constraintTop_toBottomOf="@+id/lessonName_textView">
+            app:layout_constraintBottom_toTopOf="@+id/lessonSubtitle_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
 
             <TextView
                 android:id="@+id/progressOne_textView"
