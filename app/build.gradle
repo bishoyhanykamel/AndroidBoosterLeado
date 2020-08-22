@@ -81,5 +81,7 @@ dependencies {
     //rouded imageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    // Youtube player API
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.3'
 
 }
