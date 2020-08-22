@@ -20,6 +20,7 @@
             android:background="#d2fcfa"
             tools:context=".buttonNavigationActivites.HomeFragment">
 
+
             <ImageView
                 android:id="@+id/maountains"
                 android:layout_width="300dp"
